@@ -3,14 +3,17 @@
 <p>Days worked: <span [textContent]="daysWorked"></span></p>
 
 <p>
-  Days until next vacation: <b>{{ 365 - daysWorked }}</b>
+  Days until next vacation: <strong>{{ 365 - daysWorked }}</strong>
 </p>
 
 <p>
   Thank you for being a dedicated employee of {{ company.name + '!' }}
 </p>
 
-<img [src]="employeeOfTheWeek.picture" />
+<img
+  [src]="employeeOfTheWeek.picture"
+  [alt]="employeeOfTheWeek.name"
+/>
 
 <p
   [textContent]="
